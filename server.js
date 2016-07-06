@@ -13,7 +13,7 @@ var proxy = [{
 var server = new WebpackDevServer(webpack(config), {
     publicPath: './',
     proxy:proxy
-});
+});   
 
 //将其他路由，全部返回index.html
 server.app.get('*', function (req,res) {
